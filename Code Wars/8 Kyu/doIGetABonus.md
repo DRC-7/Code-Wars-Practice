@@ -11,6 +11,7 @@ If bonus is true, the salary should be multiplied by 10. If bonus is false, the 
 Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia), "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
 
 # Solution
+JavaScript
 ```JS
 function bonusTime(salary, bonus) {
 
