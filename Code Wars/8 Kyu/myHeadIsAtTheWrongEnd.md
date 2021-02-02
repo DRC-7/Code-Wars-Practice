@@ -9,10 +9,19 @@ Save the animals by switching them back. You will be given an array which will h
 Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logic.
 
 # Solution
-```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus.
+JavaScript
+```JS
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
 ```
 # Sample Test
-```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus.
+```JS
+Test.describe("Basic tests",_=>{
+Test.assertSimilar(fixTheMeerkat(["tail", "body", "head"]), ["head", "body", "tail"]);
+Test.assertSimilar(fixTheMeerkat(["tails", "body", "heads"]), ["heads", "body", "tails"]);
+Test.assertSimilar(fixTheMeerkat(["bottom", "middle", "top"]), ["top", "middle", "bottom"]);
+Test.assertSimilar(fixTheMeerkat(["lower legs", "torso", "upper legs"]), ["upper legs", "torso", "lower legs"]);
+Test.assertSimilar(fixTheMeerkat(["ground", "rainbow", "sky"]), ["sky", "rainbow", "ground"]);
+})
 ```
