@@ -33,6 +33,7 @@ def bonus_time(salary, bonus):
 ```
 
 # Sample Test
+JavaScript
 ```JS
 Test.describe("Basic tests",_=>{
 Test.assertEquals(bonusTime(10000, true), '£100000');
@@ -44,7 +45,7 @@ Test.assertEquals(bonusTime(78, false), '£78');
 Test.assertEquals(bonusTime(67890, true), '£678900');
 })
 ```
-
+Python
 ```PY
 import codewars_test as test
 from solution import bonus_time
