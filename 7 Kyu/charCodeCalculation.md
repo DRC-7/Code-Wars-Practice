@@ -25,6 +25,39 @@ Then return the difference between the sum of the digits in ``total1`` and ``tot
 ```
 
 # Solution
+JavaScript
+```JS
+function calc(x){
+  
+  let total1 = '';
+
+  for (let i = 0; i < x.length; i++) {
+    total1 += x.charCodeAt(i);
+  }
+
+  let total2 = total1.split('7').join('1');
+    
+  let newT1 = 0;
+  let newT2 = 0;
+  
+  for(let i = 0; i < total1.length; i++){
+    newT1 += parseInt(total1[i]);
+    newT2 += parseInt(total2[i]);
+  }
+  
+  let difference = newT1 - newT2;
+
+  return difference;
+}
 ```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus.
+
+# Sample Test 
+```JS
+Test.describe("Example tests",_=>{
+Test.assertEquals(calc('ABC'), 6);
+Test.assertEquals(calc('abcdef'), 6);
+Test.assertEquals(calc('ifkhchlhfd'), 6); 
+Test.assertEquals(calc('aaaaaddddr'), 30); 
+Test.assertEquals(calc('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'), 96);
+});
 ```
