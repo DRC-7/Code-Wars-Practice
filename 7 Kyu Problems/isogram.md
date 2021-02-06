@@ -1,4 +1,4 @@
-# [Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/javascript)
+# [Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1)
 
 # Problem
 
