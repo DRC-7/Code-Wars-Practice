@@ -4,12 +4,14 @@
 
 Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
 
-Examples: 
+Examples:
+
 ```JS
-spinWords( "Hey fellow warriors")  => returns "Hey wollef sroirraw" 
-spinWords( "This is a test")       => returns "This is a test" 
+spinWords( "Hey fellow warriors")  => returns "Hey wollef sroirraw"
+spinWords( "This is a test")       => returns "This is a test"
 spinWords( "This is another test") => returns "This is rehtona test"
 ```
+
 # Solution
 
 JavaScript
@@ -33,6 +35,24 @@ function spinWords(str){
   }
 
   let newStr = wordArr.join(" ");
+
+  return newStr;
+}
+```
+
+Below is a better solution. Instead of creating an array to transfer the words into, look at the word at the index. `If >5, split > reverse > join` the word at that index. Uses original array, simply reverses letters and joins at the end.
+
+```JS
+function spinWords(str){
+  let fmtStr = str.split(' ');
+
+  for (let i = 0; i < fmtStr.length; i++) {
+    if (fmtStr[i].length >= 5) {
+      fmtStr[i] = fmtStr[i].split('').reverse().join('');
+    }
+  }
+
+  let newStr = fmtStr.join(' ');
 
   return newStr;
 }
