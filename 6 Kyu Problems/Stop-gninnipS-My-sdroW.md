@@ -14,6 +14,8 @@ spinWords( "This is another test") => returns "This is rehtona test"
 
 # Solution
 
+First successful solution
+
 JavaScript
 
 ```JS
@@ -40,7 +42,7 @@ function spinWords(str){
 }
 ```
 
-Below is a better solution. Instead of creating an array to transfer the words into, look at the word at the index. `If >5, split > reverse > join` the word at that index. Uses original array, simply reverses letters and joins at the end.
+Note: Below is a better solution. Instead of creating an array to transfer the words into, look at the word at the index. `If >5, split > reverse > join` the word at that index. Uses original array, simply reverses letters and joins at the end.
 
 ```JS
 function spinWords(str){
