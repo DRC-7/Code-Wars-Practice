@@ -1,8 +1,8 @@
-# eslint and prettier settings for project
+# Sets up Eslint, Prettier and AirBnB syle guide settings for project folder
 .eslintrc.js
 package.json
 package-lock.json
 node_modules/
 
-#scratch pad used to write code
+# Scratch pad used to write code
 sp.js
