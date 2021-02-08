@@ -1,1 +1,8 @@
+# eslint and prettier settings for project
+.eslintrc.js
+package.json
+package-lock.json
+node_modules/
+
+#scratch pad used to write code
 sp.js
