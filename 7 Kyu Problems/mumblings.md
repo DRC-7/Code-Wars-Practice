@@ -18,7 +18,7 @@ The parameter of accum is a string which includes only letters from `a..z` and `
 
 JavaScript
 
-Note: This was way more challenging than I expected. Solution isn't very nice.
+Note: This was way more challenging than I expected. Solution isn't very nice, might reattempt later.
 
 ```JS
 function accum(s) {
