@@ -40,6 +40,25 @@ function createArrayOfTiers(num) {
 }
 ```
 
+Python
+
+```PY
+def create_array_of_tiers(n):
+    newArr = []
+
+    for n in str(n):
+        newArr.append(n)
+
+    fmtArr = []
+    count = ""
+
+    for f in newArr:
+        count += f
+        fmtArr.append(count)
+
+    return fmtArr
+```
+
 # Sample Test
 
 JavaScript
@@ -53,4 +72,18 @@ describe("createArrayOfTiers", function(){
         Test.assertDeepEquals(createArrayOfTiers(2017), ["2", "20", "201", "2017"]);
     });
 });
+```
+
+Python
+
+```PY
+import codewars_test as test
+
+@test.it("Sample tests")
+def tests():
+    test.assert_equals(create_array_of_tiers(420), ["4", "42", "420"])
+    test.assert_equals(create_array_of_tiers(2017), ["2", "20", "201", "2017"])
+    test.assert_equals(create_array_of_tiers(2010), ["2", "20", "201", "2010"])
+    test.assert_equals(create_array_of_tiers(4020), ["4", "40", "402", "4020"])
+    test.assert_equals(create_array_of_tiers(80200), ["8", "80", "802", "8020", "80200"])
 ```
