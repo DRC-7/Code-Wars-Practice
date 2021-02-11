@@ -6,4 +6,5 @@ node_modules/
 
 # Scratch pad used to write code
 sp.js
+sp.py
 .vscode/settings.json
